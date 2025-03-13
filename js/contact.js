@@ -41,6 +41,13 @@ document.getElementById("close-quote").addEventListener("click", function () {
     document.getElementById("quote-sidebar").classList.remove("open");
 });
 
+const revealOptions = {
+  origin: '', 
+  distance: '50px', 
+  duration: 1500, 
+  delay: 300 
+};
+
 ScrollReveal().reveal('.f-content, .f-news, .input-container, .his-content', { ...revealOptions, origin: 'bottom', interval: 200 });
 ScrollReveal().reveal('.logo img', { ...revealOptions, origin: 'left' });
 ScrollReveal().reveal('.contacts li, #nav-links li', { ...revealOptions, origin: 'right', interval: 150 });
