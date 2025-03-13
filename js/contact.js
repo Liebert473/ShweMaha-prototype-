@@ -40,3 +40,13 @@ document.getElementById("open-quote").addEventListener("click", function () {
 document.getElementById("close-quote").addEventListener("click", function () {
     document.getElementById("quote-sidebar").classList.remove("open");
 });
+
+ScrollReveal().reveal('.f-content, .f-news, .input-container, .his-content', { ...revealOptions, origin: 'bottom', interval: 200 });
+ScrollReveal().reveal('.logo img', { ...revealOptions, origin: 'left' });
+ScrollReveal().reveal('.contacts li, #nav-links li', { ...revealOptions, origin: 'right', interval: 150 });
+ScrollReveal().reveal('.hours-container .day', { ...revealOptions, origin: 'bottom', distance: '30px', interval: 100 });
+ScrollReveal().reveal('#navbar', { ...revealOptions, origin: 'top' });
+ScrollReveal().reveal('#menu-toggle', { ...revealOptions, origin: 'bottom', distance: '30px' });
+ScrollReveal().reveal('.location-p .container > *', { ...revealOptions, origin: 'left', interval: 150 });
+ScrollReveal().reveal('.contact-details', { ...revealOptions, origin: 'bottom', distance: '30px', interval: 100 });
+ScrollReveal().reveal('.contact-form', { ...revealOptions, origin: 'bottom', distance: '30px', interval: 100 });
